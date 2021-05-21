@@ -17,7 +17,7 @@
 
 	"background": {
 		"scripts": [
-			"aws-sdk-2.270.1.min.js",
+			"aws-sdk-2.911.0.min.js",
 			"common.js",
 			"awsAIServices.js",
 			"background.js"

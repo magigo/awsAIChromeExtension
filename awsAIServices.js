@@ -10,7 +10,7 @@ var AWSAIServices = (function() {
 	var translate;
 
 	var voices = {
-		'en': 'Joanna',
+		'en': 'Matthew',
 		'es': 'Penelope',
 		'tr': 'Filiz',
 		'fr': 'Lea',
@@ -41,7 +41,8 @@ var AWSAIServices = (function() {
 		var params = {
 			OutputFormat: 'mp3',
 			Text: txt,
-			VoiceId: voices[lang]
+			VoiceId: voices[lang],
+			Engine: 'neural'
 		};
 		
 		polly.synthesizeSpeech(params, function(err, data) {
