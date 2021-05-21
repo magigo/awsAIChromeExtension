@@ -197,7 +197,7 @@
 							},
 							open: function (event, ui) {
 								if (translatePreferences && translatePreferences.sourceLangCode && translatePreferences.targetLangCode) {
-									$("#awsAIExt_inputLang").val('auto');
+									$("#awsAIExt_inputLang").val(translatePreferences.sourceLangCode);
 									$("#awsAIExt_outputLang").val(translatePreferences.targetLangCode);
 								}
 								translate();
