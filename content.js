@@ -146,10 +146,10 @@
 				alert('Please choose different languages as source and target language');
 				return false;
 			}
-			if (inputLang != 'en' && outputLang != 'en') {
-				alert('Please choose English as either source language or target language');
-				return false;
-			}
+			// if (inputLang != 'en' && outputLang != 'en') {
+			// 	alert('Please choose English as either source language or target language');
+			// 	return false;
+			// }
 			return true;
 		}
 
@@ -197,7 +197,7 @@
 							},
 							open: function (event, ui) {
 								if (translatePreferences && translatePreferences.sourceLangCode && translatePreferences.targetLangCode) {
-									$("#awsAIExt_inputLang").val(translatePreferences.sourceLangCode);
+									$("#awsAIExt_inputLang").val('auto');
 									$("#awsAIExt_outputLang").val(translatePreferences.targetLangCode);
 								}
 								translate();
